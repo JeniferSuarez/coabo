@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a México</title>
+    <style>
+        /* Fondo de la página con los colores de la bandera de México */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #006847 33.3%, #ffffff 33.3%, #ffffff 66.6%, #ce1126 66.6%);
+        }
+
+        /* Estilo del título */
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #ce1126;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1::before {
+            content: "🎶 ";
+        }
+
+        h1::after {
+            content: " 🎺";
+        }
+
+        /* Secciones */
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #006847;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Imágenes */
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Enlaces */
+        a {
+            color: #ce1126;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #006847;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ce1126;
+        }
+    </style>
+</head>
+<body>
+    <h1>Viaje a México 🎩</h1>
+
+    <!-- Sección de historia -->
+    <section>
+        <h2>Historia de México</h2>
+        <p>México es un país rico en cultura e historia. Desde las civilizaciones prehispánicas como los aztecas y los mayas hasta la independencia y la revolución, su historia está llena de momentos significativos que moldearon su identidad única.</p>
+    </section>
+
+    <!-- Sección de planes turísticos -->
+    <section>
+        <h2>Planes Turísticos</h2>
+        <p>Algunas experiencias imperdibles en México:</p>
+        <ul>
+            <li>Explorar las pirámides de Teotihuacán</li>
+            <li>Relajarse en las playas de Cancún</li>
+            <li>Descubrir la cultura maya en Chichén Itzá</li>
+            <li>Saborear la gastronomía en Oaxaca</li>
+            <li>Pasear por las coloridas calles de Guanajuato</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Teotihuacan_Pyramid_of_the_Moon.JPG/1200px-Teotihuacan_Pyramid_of_the_Moon.JPG" alt="Pirámides de Teotihuacán">
+        <p>Para más detalles, mira este <a href="https://www.youtube.com/watch?v=EXAMPLE" target="_blank">video sobre México</a>.</p>
+    </section>
+
+    <!-- Sección del formulario -->
+    <section>
+        <h2>Solicita Más Información</h2>
+        <form action="https://example.com" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
